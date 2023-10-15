@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="US-en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <div class="quiz-section">
+        <span id="numbering" class="numbering"></span><h2 id="js-question">Give correct answer</h2>
+      </div>
+      <div class="ques-explainer">
+        We will recommend you choose option correctly.
+      </div>
+      <!-- ul>li*4>input+label -->
+      <ul class="list-container">
+        <li>
+          <input type="radio" id="a" name="answer" />
+          <label for="a" id="a_answer">Question</label>
+        </li>
+        <li>
+          <input type="radio" id="a" name="answer" />
+          <label for="a" id="b_answer">Question</label>
+        </li>
+        <li>
+          <input type="radio" id="a" name="answer" />
+          <label for="a" id="c_answer">Question</label>
+        </li>
+        <li>
+          <input type="radio" id="a" name="answer" />
+          <label for="a" id="d_answer">Question</label>
+        </li>
+      </ul>
+      <div class="correct-ans" id="correct_ans"></div>
+      <button id="submit-btn" class="submit-button">Submit</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
